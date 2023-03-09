@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		960E52BB29B67DA20067E239 /* nodejs-project in Resources */ = {isa = PBXBuildFile; fileRef = 960E52BA29B67DA20067E239 /* nodejs-project */; };
+		96676E0C29BA679C001A1147 /* NodeCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96676E0B29BA679C001A1147 /* NodeCommunicator.swift */; };
+		96F530D529A8768400FEB72B /* FilenFileProviderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F530D429A8768400FEB72B /* FilenFileProviderApp.swift */; };
+		96F530D729A8768400FEB72B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F530D629A8768400FEB72B /* ContentView.swift */; };
+		96F530D929A8768600FEB72B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F530D829A8768600FEB72B /* Assets.xcassets */; };
+		96F530DC29A8768600FEB72B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F530DB29A8768600FEB72B /* Preview Assets.xcassets */; };
+		96F530E629A8768600FEB72B /* FilenFileProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F530E529A8768600FEB72B /* FilenFileProviderTests.swift */; };
+		96F530F029A8768600FEB72B /* FilenFileProviderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F530EF29A8768600FEB72B /* FilenFileProviderUITests.swift */; };
+		96F530F229A8768600FEB72B /* FilenFileProviderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F530F129A8768600FEB72B /* FilenFileProviderUITestsLaunchTests.swift */; };
+		96F5310529A8769C00FEB72B /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F5310429A8769C00FEB72B /* UniformTypeIdentifiers.framework */; };
+		96F5310829A8769C00FEB72B /* FilenProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F5310729A8769C00FEB72B /* FilenProviderExtension.swift */; };
+		96F5310A29A8769C00FEB72B /* FilenProviderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F5310929A8769C00FEB72B /* FilenProviderItem.swift */; };
+		96F5310C29A8769C00FEB72B /* FilenProviderEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F5310B29A8769C00FEB72B /* FilenProviderEnumerator.swift */; };
+		96F5311129A8769C00FEB72B /* FilenProviderExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 96F5310229A8769C00FEB72B /* FilenProviderExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		96F5311729AEC2D700FEB72B /* NodeMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F5311629AEC2D700FEB72B /* NodeMobile.xcframework */; };
+		96F5311829AEC2D700FEB72B /* NodeMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 96F5311629AEC2D700FEB72B /* NodeMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		96F5311D29AEC34500FEB72B /* NodeRunner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96F5311C29AEC34500FEB72B /* NodeRunner.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96F530E229A8768600FEB72B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96F530C929A8768400FEB72B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96F530D029A8768400FEB72B;
+			remoteInfo = BooBooPharmacy;
+		};
+		96F530EC29A8768600FEB72B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96F530C929A8768400FEB72B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96F530D029A8768400FEB72B;
+			remoteInfo = BooBooPharmacy;
+		};
+		96F5310F29A8769C00FEB72B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96F530C929A8768400FEB72B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96F5310129A8769C00FEB72B;
+			remoteInfo = FileProviderExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96F5311529A8769C00FEB72B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				96F5311129A8769C00FEB72B /* FilenProviderExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F5311929AEC2D700FEB72B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				96F5311829AEC2D700FEB72B /* NodeMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		960E52BA29B67DA20067E239 /* nodejs-project */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "nodejs-project"; sourceTree = "<group>"; };
+		96676E0B29BA679C001A1147 /* NodeCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeCommunicator.swift; sourceTree = "<group>"; };
+		968D94FE29B6DD180069ACB1 /* FilenFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FilenFileProvider.entitlements; sourceTree = "<group>"; };
+		96F530D129A8768400FEB72B /* FilenFileProvider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilenFileProvider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F530D429A8768400FEB72B /* FilenFileProviderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilenFileProviderApp.swift; sourceTree = "<group>"; };
+		96F530D629A8768400FEB72B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96F530D829A8768600FEB72B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96F530DB29A8768600FEB72B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96F530E129A8768600FEB72B /* FilenFileProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilenFileProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F530E529A8768600FEB72B /* FilenFileProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilenFileProviderTests.swift; sourceTree = "<group>"; };
+		96F530EB29A8768600FEB72B /* FilenFileProviderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilenFileProviderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F530EF29A8768600FEB72B /* FilenFileProviderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilenFileProviderUITests.swift; sourceTree = "<group>"; };
+		96F530F129A8768600FEB72B /* FilenFileProviderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilenFileProviderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		96F5310229A8769C00FEB72B /* FilenProviderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FilenProviderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F5310429A8769C00FEB72B /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		96F5310729A8769C00FEB72B /* FilenProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilenProviderExtension.swift; sourceTree = "<group>"; };
+		96F5310929A8769C00FEB72B /* FilenProviderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilenProviderItem.swift; sourceTree = "<group>"; };
+		96F5310B29A8769C00FEB72B /* FilenProviderEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilenProviderEnumerator.swift; sourceTree = "<group>"; };
+		96F5310D29A8769C00FEB72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96F5310E29A8769C00FEB72B /* FilenProviderExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FilenProviderExtension.entitlements; sourceTree = "<group>"; };
+		96F5311629AEC2D700FEB72B /* NodeMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NodeMobile.xcframework; path = libnode/NodeMobile.xcframework; sourceTree = "<group>"; };
+		96F5311A29AEC31900FEB72B /* NodeRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeRunner.h; sourceTree = "<group>"; };
+		96F5311B29AEC34400FEB72B /* FilenProviderExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FilenProviderExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		96F5311C29AEC34500FEB72B /* NodeRunner.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NodeRunner.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96F530CE29A8768400FEB72B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F530DE29A8768600FEB72B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F530E829A8768600FEB72B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F530FF29A8769C00FEB72B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F5310529A8769C00FEB72B /* UniformTypeIdentifiers.framework in Frameworks */,
+				96F5311729AEC2D700FEB72B /* NodeMobile.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96F530C829A8768400FEB72B = {
+			isa = PBXGroup;
+			children = (
+				960E52BA29B67DA20067E239 /* nodejs-project */,
+				96F530D329A8768400FEB72B /* FilenFileProvider */,
+				96F530E429A8768600FEB72B /* FilenFileProviderTests */,
+				96F530EE29A8768600FEB72B /* FilenFileProviderUITests */,
+				96F5310629A8769C00FEB72B /* FilenProviderExtension */,
+				96F5310329A8769C00FEB72B /* Frameworks */,
+				96F530D229A8768400FEB72B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96F530D229A8768400FEB72B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96F530D129A8768400FEB72B /* FilenFileProvider.app */,
+				96F530E129A8768600FEB72B /* FilenFileProviderTests.xctest */,
+				96F530EB29A8768600FEB72B /* FilenFileProviderUITests.xctest */,
+				96F5310229A8769C00FEB72B /* FilenProviderExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96F530D329A8768400FEB72B /* FilenFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				968D94FE29B6DD180069ACB1 /* FilenFileProvider.entitlements */,
+				96F530D429A8768400FEB72B /* FilenFileProviderApp.swift */,
+				96F530D629A8768400FEB72B /* ContentView.swift */,
+				96F530D829A8768600FEB72B /* Assets.xcassets */,
+				96F530DA29A8768600FEB72B /* Preview Content */,
+			);
+			path = FilenFileProvider;
+			sourceTree = "<group>";
+		};
+		96F530DA29A8768600FEB72B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				96F530DB29A8768600FEB72B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96F530E429A8768600FEB72B /* FilenFileProviderTests */ = {
+			isa = PBXGroup;
+			children = (
+				96F530E529A8768600FEB72B /* FilenFileProviderTests.swift */,
+			);
+			path = FilenFileProviderTests;
+			sourceTree = "<group>";
+		};
+		96F530EE29A8768600FEB72B /* FilenFileProviderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96F530EF29A8768600FEB72B /* FilenFileProviderUITests.swift */,
+				96F530F129A8768600FEB72B /* FilenFileProviderUITestsLaunchTests.swift */,
+			);
+			path = FilenFileProviderUITests;
+			sourceTree = "<group>";
+		};
+		96F5310329A8769C00FEB72B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96F5311629AEC2D700FEB72B /* NodeMobile.xcframework */,
+				96F5310429A8769C00FEB72B /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96F5310629A8769C00FEB72B /* FilenProviderExtension */ = {
+			isa = PBXGroup;
+			children = (
+				96F5310729A8769C00FEB72B /* FilenProviderExtension.swift */,
+				96F5310929A8769C00FEB72B /* FilenProviderItem.swift */,
+				96F5310B29A8769C00FEB72B /* FilenProviderEnumerator.swift */,
+				96676E0B29BA679C001A1147 /* NodeCommunicator.swift */,
+				96F5310D29A8769C00FEB72B /* Info.plist */,
+				96F5310E29A8769C00FEB72B /* FilenProviderExtension.entitlements */,
+				96F5311A29AEC31900FEB72B /* NodeRunner.h */,
+				96F5311C29AEC34500FEB72B /* NodeRunner.mm */,
+				96F5311B29AEC34400FEB72B /* FilenProviderExtension-Bridging-Header.h */,
+			);
+			path = FilenProviderExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96F530D029A8768400FEB72B /* FilenFileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96F530F529A8768600FEB72B /* Build configuration list for PBXNativeTarget "FilenFileProvider" */;
+			buildPhases = (
+				96F530CD29A8768400FEB72B /* Sources */,
+				96F530CE29A8768400FEB72B /* Frameworks */,
+				96F530CF29A8768400FEB72B /* Resources */,
+				96F5311529A8769C00FEB72B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96F5311029A8769C00FEB72B /* PBXTargetDependency */,
+			);
+			name = FilenFileProvider;
+			productName = BooBooPharmacy;
+			productReference = 96F530D129A8768400FEB72B /* FilenFileProvider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96F530E029A8768600FEB72B /* FilenFileProviderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96F530F829A8768600FEB72B /* Build configuration list for PBXNativeTarget "FilenFileProviderTests" */;
+			buildPhases = (
+				96F530DD29A8768600FEB72B /* Sources */,
+				96F530DE29A8768600FEB72B /* Frameworks */,
+				96F530DF29A8768600FEB72B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96F530E329A8768600FEB72B /* PBXTargetDependency */,
+			);
+			name = FilenFileProviderTests;
+			productName = BooBooPharmacyTests;
+			productReference = 96F530E129A8768600FEB72B /* FilenFileProviderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96F530EA29A8768600FEB72B /* FilenFileProviderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96F530FB29A8768600FEB72B /* Build configuration list for PBXNativeTarget "FilenFileProviderUITests" */;
+			buildPhases = (
+				96F530E729A8768600FEB72B /* Sources */,
+				96F530E829A8768600FEB72B /* Frameworks */,
+				96F530E929A8768600FEB72B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96F530ED29A8768600FEB72B /* PBXTargetDependency */,
+			);
+			name = FilenFileProviderUITests;
+			productName = BooBooPharmacyUITests;
+			productReference = 96F530EB29A8768600FEB72B /* FilenFileProviderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		96F5310129A8769C00FEB72B /* FilenProviderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96F5311229A8769C00FEB72B /* Build configuration list for PBXNativeTarget "FilenProviderExtension" */;
+			buildPhases = (
+				96F530FE29A8769C00FEB72B /* Sources */,
+				96F530FF29A8769C00FEB72B /* Frameworks */,
+				96F5310029A8769C00FEB72B /* Resources */,
+				96F5311929AEC2D700FEB72B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilenProviderExtension;
+			productName = FileProviderExtension;
+			productReference = 96F5310229A8769C00FEB72B /* FilenProviderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96F530C929A8768400FEB72B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					96F530D029A8768400FEB72B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					96F530E029A8768600FEB72B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 96F530D029A8768400FEB72B;
+					};
+					96F530EA29A8768600FEB72B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 96F530D029A8768400FEB72B;
+					};
+					96F5310129A8769C00FEB72B = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = 96F530CC29A8768400FEB72B /* Build configuration list for PBXProject "FilenFileProvider" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96F530C829A8768400FEB72B;
+			productRefGroup = 96F530D229A8768400FEB72B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96F530D029A8768400FEB72B /* FilenFileProvider */,
+				96F530E029A8768600FEB72B /* FilenFileProviderTests */,
+				96F530EA29A8768600FEB72B /* FilenFileProviderUITests */,
+				96F5310129A8769C00FEB72B /* FilenProviderExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96F530CF29A8768400FEB72B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F530DC29A8768600FEB72B /* Preview Assets.xcassets in Resources */,
+				96F530D929A8768600FEB72B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F530DF29A8768600FEB72B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F530E929A8768600FEB72B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F5310029A8769C00FEB72B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960E52BB29B67DA20067E239 /* nodejs-project in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96F530CD29A8768400FEB72B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F530D729A8768400FEB72B /* ContentView.swift in Sources */,
+				96F530D529A8768400FEB72B /* FilenFileProviderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F530DD29A8768600FEB72B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F530E629A8768600FEB72B /* FilenFileProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F530E729A8768600FEB72B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F530F029A8768600FEB72B /* FilenFileProviderUITests.swift in Sources */,
+				96F530F229A8768600FEB72B /* FilenFileProviderUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F530FE29A8769C00FEB72B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F5310829A8769C00FEB72B /* FilenProviderExtension.swift in Sources */,
+				96F5310A29A8769C00FEB72B /* FilenProviderItem.swift in Sources */,
+				96F5310C29A8769C00FEB72B /* FilenProviderEnumerator.swift in Sources */,
+				96676E0C29BA679C001A1147 /* NodeCommunicator.swift in Sources */,
+				96F5311D29AEC34500FEB72B /* NodeRunner.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96F530E329A8768600FEB72B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96F530D029A8768400FEB72B /* FilenFileProvider */;
+			targetProxy = 96F530E229A8768600FEB72B /* PBXContainerItemProxy */;
+		};
+		96F530ED29A8768600FEB72B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96F530D029A8768400FEB72B /* FilenFileProvider */;
+			targetProxy = 96F530EC29A8768600FEB72B /* PBXContainerItemProxy */;
+		};
+		96F5311029A8769C00FEB72B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 96F5310129A8769C00FEB72B /* FilenProviderExtension */;
+			targetProxy = 96F5310F29A8769C00FEB72B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		96F530F329A8768600FEB72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96F530F429A8768600FEB72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96F530F629A8768600FEB72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FilenFileProvider/FilenFileProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "FilenFileProvider/Preview\\ Content";
+				DEVELOPMENT_TEAM = N74E93PMQ8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingfeishengtian.FilenFileProvider;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.lingfeishengtian.FilenProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96F530F729A8768600FEB72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FilenFileProvider/FilenFileProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "FilenFileProvider/Preview\\ Content";
+				DEVELOPMENT_TEAM = N74E93PMQ8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingfeishengtian.FilenFileProvider;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.lingfeishengtian.FilenProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		96F530F929A8768600FEB72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N74E93PMQ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingfeishengtian.FilenFileProviderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilenFileProvider.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FilenFileProvider";
+			};
+			name = Debug;
+		};
+		96F530FA29A8768600FEB72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N74E93PMQ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingfeishengtian.FilenFileProviderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilenFileProvider.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FilenFileProvider";
+			};
+			name = Release;
+		};
+		96F530FC29A8768600FEB72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N74E93PMQ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingfeishengtian.FilenFileProviderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BooBooPharmacy;
+			};
+			name = Debug;
+		};
+		96F530FD29A8768600FEB72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N74E93PMQ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingfeishengtian.FilenFileProviderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BooBooPharmacy;
+			};
+			name = Release;
+		};
+		96F5311329A8769C00FEB72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FilenProviderExtension/FilenProviderExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "nodejs-project";
+				DEVELOPMENT_TEAM = N74E93PMQ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FilenProviderExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FilenProviderExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingfeishengtian.FilenFileProvider.FilenProviderExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FilenProviderExtension/FilenProviderExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		96F5311429A8769C00FEB72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FilenProviderExtension/FilenProviderExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "nodejs-project";
+				DEVELOPMENT_TEAM = N74E93PMQ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FilenProviderExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FilenProviderExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingfeishengtian.FilenFileProvider.FilenProviderExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FilenProviderExtension/FilenProviderExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96F530CC29A8768400FEB72B /* Build configuration list for PBXProject "FilenFileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F530F329A8768600FEB72B /* Debug */,
+				96F530F429A8768600FEB72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96F530F529A8768600FEB72B /* Build configuration list for PBXNativeTarget "FilenFileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F530F629A8768600FEB72B /* Debug */,
+				96F530F729A8768600FEB72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96F530F829A8768600FEB72B /* Build configuration list for PBXNativeTarget "FilenFileProviderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F530F929A8768600FEB72B /* Debug */,
+				96F530FA29A8768600FEB72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96F530FB29A8768600FEB72B /* Build configuration list for PBXNativeTarget "FilenFileProviderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F530FC29A8768600FEB72B /* Debug */,
+				96F530FD29A8768600FEB72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96F5311229A8769C00FEB72B /* Build configuration list for PBXNativeTarget "FilenProviderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F5311329A8769C00FEB72B /* Debug */,
+				96F5311429A8769C00FEB72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96F530C929A8768400FEB72B /* Project object */;
+}

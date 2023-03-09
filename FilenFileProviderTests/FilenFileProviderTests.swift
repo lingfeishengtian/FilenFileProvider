@@ -6,9 +6,9 @@
 //
 
 import XCTest
-@testable import BooBooPharmacy
+@testable import FilenFileProvider
 
-final class BooBooPharmacyTests: XCTestCase {
+final class FilenFileProviderTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

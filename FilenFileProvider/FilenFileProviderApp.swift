@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct BooBooPharmacyApp: App {
+struct FilenFileProviderApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

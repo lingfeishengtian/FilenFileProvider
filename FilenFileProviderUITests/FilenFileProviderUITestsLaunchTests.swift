@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class BooBooPharmacyUITestsLaunchTests: XCTestCase {
+final class FilenFileProviderUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
