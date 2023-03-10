@@ -87,7 +87,7 @@ final class NodeCommunicator {
     }
     
     // TODO: NodeJS Implement
-    public func getItemMetadata(for identifier: NSFileProviderItemIdentifier) {
+    func getItemMetadata(for identifier: NSFileProviderItemIdentifier) {
         // Make API call and retrieve item metadata, should get at least the following information
         // 1. Filename
         // 2. File Metadata (optional)
@@ -97,9 +97,27 @@ final class NodeCommunicator {
     }
     
     // TODO: NodeJS Implement
-    public func downloadItem(for identifier: NSFileProviderItemIdentifier, version: NSFileVersion) {
+    func getFilesInDirectory(for identifier: NSFileProviderItemIdentifier) {
+        // Identifier will always be a directory
+        // MUST Support Working Directory, Trash Directory, Root Dirctory, and user created folders
+    }
+    
+    // TODO: NodeJS Implement
+    func downloadItem(for identifier: NSFileProviderItemIdentifier, version: NSFileProviderItemVersion) {
         // Download the item with identifier with version (can ignore for now)
         // Use fileURL provided
         let fileURL = makeTemporaryURL("fetchContents")
     }
+    
+    // TODO: NodeJS Implement
+    func deleteItem(for identifier: NSFileProviderItemIdentifier, baseVersion: NSFileProviderItemVersion) {
+        // Delete the item with identifier
+    }
+    
+    // TODO: NodeJS Implement
+    func createFolder(for identifier: NSFileProviderItemIdentifier) {
+        // Create folder with identifier at identifier.parent
+    }
+    
+//    func create
 }

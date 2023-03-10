@@ -21,6 +21,7 @@ class FilenProviderExtension: NSObject, NSFileProviderReplicatedExtension {
     required init(domain: NSFileProviderDomain) {
         // TODO: The containing application must create a domain using `NSFileProviderManager.add(_:, completionHandler:)`. The system will then launch the application extension process, call `FileProviderExtension.init(domain:)` to instantiate the extension for that domain, and call methods on the instance.
         print(domain.identifier)
+        self.nodeCommunicator = NodeCommunicator(domain: domain)
         self.domain = domain
         super.init()
         
@@ -69,6 +70,6 @@ class FilenProviderExtension: NSObject, NSFileProviderReplicatedExtension {
     }
     
     func enumerator(for containerItemIdentifier: NSFileProviderItemIdentifier, request: NSFileProviderRequest) throws -> NSFileProviderEnumerator {
-        return FilenProviderEnumerator(enumeratedItemIdentifier: containerItemIdentifier)
+        return FilenProviderEnumerator(enumeratedItemIdentifier: containerItemIdentifier, isWorkingSet: containerItemIdentifier == NSFileProviderItemIdentifier.workingSet)
     }
 }

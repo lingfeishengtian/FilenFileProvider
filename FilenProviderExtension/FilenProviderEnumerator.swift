@@ -11,9 +11,17 @@ class FilenProviderEnumerator: NSObject, NSFileProviderEnumerator {
     
     private let enumeratedItemIdentifier: NSFileProviderItemIdentifier
     private let anchor = NSFileProviderSyncAnchor("an anchor".data(using: .utf8)!)
+    private var workSet = false
     
     init(enumeratedItemIdentifier: NSFileProviderItemIdentifier) {
         self.enumeratedItemIdentifier = enumeratedItemIdentifier
+        super.init()
+    }
+
+
+    init(enumeratedItemIdentifier: NSFileProviderItemIdentifier, isWorkingSet: Bool) {
+        self.enumeratedItemIdentifier = enumeratedItemIdentifier
+        workSet = isWorkingSet
         super.init()
     }
 
@@ -34,6 +42,7 @@ class FilenProviderEnumerator: NSObject, NSFileProviderEnumerator {
          - inform the observer about the items returned by the server (possibly multiple times)
          - inform the observer that you are finished with this page
          */
+         print(workSet)
         let nodeServer = "http:/127.0.0.1:3000/"
         let url = URL(string: nodeServer)
         print(url ?? "TEST")
@@ -41,12 +50,12 @@ class FilenProviderEnumerator: NSObject, NSFileProviderEnumerator {
             do {
                 let versions = try String(contentsOf: url!)
                 
-                observer.didEnumerate([FilenProviderItem(identifier: NSFileProviderItemIdentifier("a file")), FilenProviderItem(identifier: NSFileProviderItemIdentifier(String(versions.description)))])
+                observer.didEnumerate([FilenProviderItem(identifier: NSFileProviderItemIdentifier("a file"), metadata: [:]), FilenProviderItem(identifier: NSFileProviderItemIdentifier(String(versions.description)), metadata: [:])])
             } catch {
                 print (error)
             }
         }else {
-            observer.didEnumerate([FilenProviderItem(identifier: NSFileProviderItemIdentifier("a file"))])
+            observer.didEnumerate([FilenProviderItem(identifier: NSFileProviderItemIdentifier("a file"), metadata: [:])])
         }
         observer.finishEnumerating(upTo: nil)
     }
@@ -61,7 +70,7 @@ class FilenProviderEnumerator: NSObject, NSFileProviderEnumerator {
          - inform the observer about item deletions and updates (modifications + insertions)
          - inform the observer when you have finished enumerating up to a subsequent sync anchor
          */
-        
+        print(workSet)
         observer.finishEnumeratingChanges(upTo: anchor, moreComing: false)
     }
 
