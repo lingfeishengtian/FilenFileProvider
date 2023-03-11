@@ -85,6 +85,8 @@ final class NodeCommunicator {
             return tempDir.appendingPathComponent("\(purpose)-\(UUID().uuidString)")
         }
     }
+
+    // TODO: ADD completion handlers to everything!
     
     // TODO: NodeJS Implement
     func getItemMetadata(for identifier: NSFileProviderItemIdentifier) {
@@ -115,9 +117,12 @@ final class NodeCommunicator {
     }
     
     // TODO: NodeJS Implement
-    func createFolder(for identifier: NSFileProviderItemIdentifier) {
-        // Create folder with identifier at identifier.parent
+    func createFolder(withName name: String, at parent: NSFileProviderItemIdentifier) {
+        // Create folder with identifier at parent
     }
-    
-//    func create
+
+    // TODO: NodeJS Implement
+    func createItem(withName name: String, at parent: NSFileProviderItemIdentifier, withContents contents: URL) {
+        // Create item with identifier at parent with contents at URL
+    }
 }

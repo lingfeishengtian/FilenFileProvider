@@ -6,6 +6,7 @@
 //
 
 import FileProvider
+import UniformTypeIdentifiers
 
 class FilenProviderExtension: NSObject, NSFileProviderReplicatedExtension {
     let nodeCommunicator: NodeCommunicator
@@ -50,6 +51,22 @@ class FilenProviderExtension: NSObject, NSFileProviderReplicatedExtension {
     
     func createItem(basedOn itemTemplate: NSFileProviderItem, fields: NSFileProviderItemFields, contents url: URL?, options: NSFileProviderCreateItemOptions = [], request: NSFileProviderRequest, completionHandler: @escaping (NSFileProviderItem?, NSFileProviderItemFields, Bool, Error?) -> Void) -> Progress {
         // TODO: a new item was created on disk, process the item's creation
+        
+        let urlExists = url != nil
+        let contentTypeExists = itemTemplate.contentType?.conforms(to: UTType.folder)
+        
+        if !urlExists, let isFolder = contentTypeExists {
+            if isFolder {
+                nodeCommunicator.createFolder(withName: itemTemplate.filename, at: itemTemplate.parentItemIdentifier)
+            } else {
+                completionHandler(nil, [], false, NSError(domain: NSCocoaErrorDomain,
+                                                          code: NSFeatureUnsupportedError,
+                                                          userInfo: ["userDomain" : domain,
+                                                                     "errorMessage" : "Symlinks and Alias are not supported"]))
+            }
+        } else {
+            nodeCommunicator.createItem(withName: itemTemplate.filename, at: itemTemplate.parentItemIdentifier, withContents: url!)
+        }
         
         completionHandler(itemTemplate, [], false, nil)
         return Progress()
