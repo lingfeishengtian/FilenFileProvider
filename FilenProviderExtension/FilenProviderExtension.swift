@@ -74,6 +74,18 @@ class FilenProviderExtension: NSObject, NSFileProviderReplicatedExtension {
     
     func modifyItem(_ item: NSFileProviderItem, baseVersion version: NSFileProviderItemVersion, changedFields: NSFileProviderItemFields, contents newContents: URL?, options: NSFileProviderModifyItemOptions = [], request: NSFileProviderRequest, completionHandler: @escaping (NSFileProviderItem?, NSFileProviderItemFields, Bool, Error?) -> Void) -> Progress {
         // TODO: an item was modified on disk, process the item's modification
+        var trackChanges = changedFields
+        
+        if changedFields.contains(.filename) || changedFields.contains(.parentItemIdentifier) {
+            nodeCommunicator.moveItem(for: item.itemIdentifier, to: item.parentItemIdentifier, filename: item.filename)
+            trackChanges.remove(.filename)
+            trackChanges.remove(.parentItemIdentifier)
+        }
+
+        if changedFields.contains(.contents) {
+            nodeCommunicator.updateItem(for: item.itemIdentifier, withContents: newContents!)
+            trackChanges.remove(.contents)
+        }
         
         completionHandler(nil, [], false, NSError(domain: NSCocoaErrorDomain, code: NSFeatureUnsupportedError, userInfo:[:]))
         return Progress()

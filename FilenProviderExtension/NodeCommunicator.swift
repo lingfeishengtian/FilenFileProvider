@@ -125,4 +125,17 @@ final class NodeCommunicator {
     func createItem(withName name: String, at parent: NSFileProviderItemIdentifier, withContents contents: URL) {
         // Create item with identifier at parent with contents at URL
     }
+    
+    // TODO: NodeJS Implement
+    func moveItem(for identifier: NSFileProviderItemIdentifier, to newParent: NSFileProviderItemIdentifier, filename: String) {
+        // Move item with identifier to new parent with filename
+        // Filename can be the same as the original
+        // newParent can also be same as original
+        // Think of like a linux mv command (can rename and move)
+    }
+
+    // TODO: NodeJS Implement
+    func updateItem(for identifier: NSFileProviderItemIdentifier, withContents contents: URL) {
+        // Update item's contents with identifier
+    }
 }
